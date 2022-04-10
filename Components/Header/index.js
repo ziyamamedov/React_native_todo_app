@@ -4,7 +4,7 @@ export const Header = () => {
 
   return (
     <View style={styles.headerWrap}>
-      <Text>Todo app</Text>
+      <Text style={styles.headerTitle}>Todo app</Text>
     </View>
   )
 }
@@ -12,6 +12,15 @@ export const Header = () => {
 const styles = StyleSheet.create({
   headerWrap: {
     height: 70,
-    backgroundColor: 'violet'
+    width: '100%',
+    backgroundColor: 'violet',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 30,
   },
+  headerTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#fff',
+  }
 });
